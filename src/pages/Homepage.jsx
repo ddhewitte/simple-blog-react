@@ -1,6 +1,6 @@
 export default function Homepage(){
     return(
-        <div className="flex justify-center mt-5 p-2 mx-auto w-full">
+        <>
             <div className="flex-row">
                 <div className="w-full md:w-150 h-auto border-3 border-gray-200 p-5 rounded-md mb-3">
                     <h1 className="text-sm md:text-xl mb-3 font-bold md:font-normal">Minimalism in design is not just about using less</h1>
@@ -26,6 +26,6 @@ export default function Homepage(){
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
