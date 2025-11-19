@@ -1,3 +1,10 @@
 export default function Footer(){
-    return(<div>Footer</div>)
+    return(
+        <div className="flex justify-center mt-5 text-sm p-4 bottom-0">
+            <div className="flex-row justify-center text-center"> 
+                <p>Copyright 2025 Blog by React</p>
+                <p className="text-gray-500">Created by by AdjiHendrawan - Indonesia</p>
+            </div>
+        </div>
+    )
 }

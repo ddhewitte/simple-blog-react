@@ -7,9 +7,14 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Homepage />
-      <Footer />
+      <div className="container"> 
+        <div className="bg-white min-h-screen">
+          <Header />
+            <Homepage />
+          <Footer />
+        </div>
+      </div>
+      
     </>
   )
 }
