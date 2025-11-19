@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Header(){
     return (
         <>
@@ -6,9 +8,9 @@ export default function Header(){
                     <div>Blog With React</div>
                     <div>
                         <ul className="flex gap-3">
-                            <li>Home</li>
-                            <li>Premium</li>
-                            <li>Login</li>
+                            <li><Link to="/" className="text-white hover:underline decoration-amber-400 decoration-2 decoration-dotted"> Home </Link></li>
+                            <li><Link to="/premium" className="text-white hover:underline decoration-amber-400 decoration-2 decoration-dotted"> Premium </Link></li>
+                            <li><Link to="/login" className="text-white hover:underline decoration-amber-400 decoration-2 decoration-dotted"> Login </Link></li>
                         </ul>
                     </div>
                 </div>
