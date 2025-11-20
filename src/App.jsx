@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import Premium from './components/Premium'
 import Login from './components/Login'
 import Detail from './pages/Detail'
+import Cart from './components/Cart'
 import {useTheme} from './context/ThemeContext'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/detail/:id" element={<Detail />}></Route>
                 <Route path="/premium" element={<Premium />}></Route>
                 <Route path="/login" element={<Login />}></Route>
+                <Route path="/cart" element={<Cart />}></Route>
               </Routes>
             </div>
           <Footer setDark={setThemeToDark} setLight={setThemeToLight}/>
