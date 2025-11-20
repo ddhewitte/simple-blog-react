@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { generalPost } from "../services/post"
 import { useState } from "react";
 import { truncate } from "../utils/helper";
+import { Link } from "react-router-dom";
 
 export default function Homepage(){
 
@@ -37,7 +38,11 @@ export default function Homepage(){
                             
                         </div>
                         <div className="flex justify-end text-white">
-                            <button className="p-2 bg-gradient-to-r from-blue-900 to-red-900 rounded-md">Read More</button>
+                            <Link to={`/detail/`+data.id}>
+                            <button className="p-2 bg-black rounded-md cursor-pointer hover:shadow-xl">
+                                Read More
+                            </button>
+                            </Link>
                         </div>
                     </div>
 
