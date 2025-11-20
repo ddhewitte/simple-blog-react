@@ -1,16 +1,6 @@
 import { Link } from "react-router-dom"
-import { useContext } from "react"
-import { languageContext } from "../context/LanguageContext"
-import { useTheme } from "../context/ThemeContext";
 
 export default function Header(){
-
-    const lang = useContext(languageContext);
-    console.log(lang.en); 
-
-    const theme = useTheme();
-    console.log(theme);
-
     return (
         <>
             <div className="w-full sticky top-0 p-4 bg-gradient-to-r from-blue-900 to-red-900 border-b shadow-sm border-slate-200">
