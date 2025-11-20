@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { languageContext } from "../context/LanguageContext"
+import { useTheme } from "../context/ThemeContext";
 
 export default function Header(){
 
     const lang = useContext(languageContext);
     console.log(lang.en); 
+
+    const theme = useTheme();
+    console.log(theme);
 
     return (
         <>
