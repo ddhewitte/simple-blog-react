@@ -28,7 +28,7 @@ export default function Login(){
         if(!user || !pass){
             setWarningText("User dan password harus diisi!")
             return;
-        }else if(user !== mockDataLogin.username && pass !== mockDataLogin.password){
+        }else if(user !== mockDataLogin.username || pass !== mockDataLogin.password){
             setWarningText("Username atau password salah!")
             return;
         }
