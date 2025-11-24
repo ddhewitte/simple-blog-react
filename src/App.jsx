@@ -8,6 +8,7 @@ import Login from './components/Login'
 import Detail from './pages/Detail'
 import Cart from './components/Cart'
 import {useTheme} from './context/ThemeContext'
+import Logout from './components/Logout'
 
 function App() {
   //get theme context
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/premium" element={<Premium />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/cart" element={<Cart />}></Route>
+                <Route path="/logout" element={<Logout />}></Route>
               </Routes>
             </div>
           <Footer setDark={setThemeToDark} setLight={setThemeToLight}/>

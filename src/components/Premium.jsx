@@ -3,12 +3,22 @@ import { generalPost } from "../services/post"
 import { useState } from "react"
 import { truncate } from "../utils/helper";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function Premium(){
 
     const [premiumPost, setPremiumPost] = useState([]);
+    const navigate = useNavigate();
+    const checkToken = useSelector((state) => state.loginPremium.isTokenMembership);
 
     useEffect(() => {
+
+        //Check the user token from redux store
+        if(!checkToken) {
+            return navigate('/login');
+        }
+
         const getPremiumPost = async () => { 
             const getPost =  await generalPost();
 
