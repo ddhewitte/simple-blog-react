@@ -27,6 +27,7 @@ export default function Homepage(){
     return(
         <>
             <div className="flex-row">
+                <h1 className="text-2xl font-bold mb-3">Lists of Articles</h1>
 
                 { post && post.map((data) => (
 
